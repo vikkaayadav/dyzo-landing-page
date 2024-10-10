@@ -1,0 +1,1067 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+button{
+    font-family: "Lato", sans-serif;
+    box-shadow: none;
+}
+.container{
+    max-width: 1320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px 0px;
+    box-shadow: 0px 5px 10px 0px #0000001a;
+    
+}
+.MobileNavigation {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    color: white;
+    overflow-y: auto;
+    transition: left 0.5s ease;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px #00000017;
+}
+.MobileNavigation.open{
+    left: 0;
+}
+.mobileLogoBox{
+    padding: 20px;
+    border-bottom: 1px solid #c8c8c8;
+    display: flex;
+    justify-content: space-between;
+}
+.mobileLogoBox .fa{
+    color: #565656;
+    font-size: 22px;
+    padding: 5px;
+    cursor: pointer;
+}
+.MobileNavigationToggle{
+    display: none;
+}
+.MobileNavigation .mobileNavLinkBox{
+    padding: 20px;
+}
+.MobileNavigation .mobileNavLinkBox a{
+    display: block;
+    font-size: 16px;
+    color: #475569;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.MobileNavigation .mobileNavLinkBox .MobileNavBtn{
+    color: #000;
+    text-align: center;
+}
+.MobileNavigation .mobileNavLinkBox .MobileLoginBtn{
+    margin-top: 30px;
+} 
+.headerBoxMain{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+}
+.headerBoxMain a{
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+.headerBoxMain a:hover{
+    text-decoration: underline;
+}
+.navigationBox .DesktopNavigationMenu{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.headerBoxMain .ctaBox{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+.CtaStyle{ 
+    background: #0f6fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
+/* CSS for Hero Section starts */
+
+.HeroMain-wrapper {
+    width: 100%;
+    padding: 65px 0 110px 0;
+    text-align: center;
+    background: #f9faff;
+}
+.HeroMain-wrapper h1 {
+    font-size: 60px;
+    line-height: 1.3em;
+    color: #0f172a;
+    text-transform: capitalize;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+}
+.heroInfoBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-tagline{
+    max-width: 700px;
+    font-size: 20px !important;
+}
+.highlightText{
+    background: linear-gradient(200.68deg, rgb(15, 111, 255) -2.59%, rgb(160, 38, 255) 91.29%) text;
+    color: transparent;
+}
+.HeroMain-wrapper p {
+    font-size: 18px;
+    color: #475569;
+    line-height: 1.4;
+    text-transform: capitalize;
+    padding: 10px 0;
+    font-family: "Lato", sans-serif;
+}
+.HeroMain-wrapper p strong{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.HeroMain-wrapper .heroMediaBox{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+}
+.HeroMain-wrapper .heroMediaBox img{
+    width: 90%;
+}
+
+.border-none{
+    border: none !important;
+}
+
+.banner-form-container {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+}
+.banner-form-container .banner-form-container-inner{
+    max-width: 720px;
+    width: 100%;
+}
+.banner-form-container .heroSignup-formBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.heroSignup-formBox form{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+}
+.heroSignup-formBox .heroFormInputBox{
+    width: 100%;
+    text-align: left;
+}
+.heroSignup-formBox .heroFormInputBox span{
+    display: inline-block;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.heroSignup-formBox form input {
+    width: 90%;
+    padding: 15px 20px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+   
+}
+.heroSignup-formBox form .heroFormBtn {
+    width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+   cursor: pointer;
+}
+
+
+
+.banner-form-container .email-section .trial-button-banner {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 47px;
+    width: 100%;
+}
+
+.banner-form-container .info-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #333;
+}
+
+.heroTrustBox-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 4em;
+}
+
+.heroTrustBox-main .heroTrustBox {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.heroTrustBox-main .heroTrustBox .feature-icon {
+    margin-right: 5px;
+}
+
+.heroTrustBox-main .heroTrustBox span {
+    font-size: 16px;
+}
+.googleBtn-box {
+    width: 100%;
+   padding-top: 30px;
+}
+.googleBtn-box .googleBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 17px;
+    box-shadow: none;
+    border: none;
+}
+
+
+/* ========== pricing css  ======================= */
+/* CSS code */
+.pricing-main {
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.pricing-main h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.pricing-main .highlight {
+    color: #007bff;
+}
+
+.pricing-main p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 25px 0px;
+}
+.pricing-cards .card {
+    background-color: #f9faff;
+    border-radius: 8px;
+    padding: 35px 22px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s ease;
+}
+.pricing-cards .card:hover {
+    transform: scale(1.02); 
+  }
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card h4 {
+    font-size: 24px;
+    color: #007bff;
+    margin: 15px 0;
+}
+
+.trial-button, .contact-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    width: 100%;
+    max-width: 320px;
+}
+ .PlanBox-mainWrapper .card .no-cradit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.PlanBox-mainWrapper .trial-button:hover, .contact-button:hover {
+    background-color: #0056b3;
+}
+
+.PlanBox-mainWrapper .badge {
+    background-color: #007bff;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.PlanBox-mainWrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.PlanBox-mainWrapper ul li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.PlanBox-mainWrapper ul li::before {
+    content: "✔";
+    background: #007bff;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 27px;
+    padding: 6px 6px 6px 6px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TrustBadgeMain-wrapper{
+    width: 100%;
+    text-align: center;
+    padding: 65px 0;
+}
+.TrustBadgeMain-wrapper .container{
+    padding: 50px;
+    background: #edf1f5;
+    max-width: 1020px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.TrustBadgeMain-wrapper h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #0f172a;
+}
+/* .TrustBadgeMain-wrapper p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #475569;
+    gap: 30px;
+    margin: 20px 0;
+}
+.TrustBadgeMain-wrapper p img{
+    height: 15px;
+    object-position: center;
+    object-fit: cover;
+} */
+.TrustBadgeMain-wrapper .trustbadgeLogoBox{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.Book-a-demo-btn {
+    padding: 13px 20px;
+    background: #0f6fff;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.featuresMain-wrapper{
+    width: 100%;
+}
+.featuresMain-wrapper .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1120px;
+    border-bottom: 1px solid #d6d6d6;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    align-items: center;
+}
+.featuresMain-wrapper .featureCount{
+    font-size: 16px;
+    color: #475569;
+    font-weight: bold;
+}
+
+.featuresMain-wrapper h3{
+    font-size: 30px;
+    color: #0f172a;
+    padding: 20px 0 30px 0;
+
+}
+
+.featuresMain-wrapper .featuresSubHeading{
+    font-size: 18px;
+    color: #475569;;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+.featuresMain-wrapper .FeaturesTestimonialBox{
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 1px 1px 10px #0000001c;
+    border-radius: 5px;
+}
+.fTestimonialInfoBox{
+    display: flex;
+    gap: 13px;
+    margin-top: 20px;
+}
+.FeaturesTestimonialBox p{
+    font-size: 16px;
+    color: #000;
+    line-height: 1.4em;  
+}
+
+.fTestimonialInfoBox p span{
+    font-size: 14px;
+    color: #475569;
+}
+.fTestimonialInfoBox img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+
+.InsightMainBox-wrapper {
+    width: 100%;
+    padding: 65px 0;
+    background: #f9faff;
+}
+.InsightMainBox-wrapper h2{
+    font-size: 36px;
+    color: #0f172a;
+    text-align: center;
+}
+.InsightMainBox-wrapper .InsightMainBoxs-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 4em;
+}
+.InsightMainBox-wrapper .InsightBox {
+    padding: 25px;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.InsightMainBox-wrapper h4{
+    font-size: 22px;
+    color: #1e293b;
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+.InsightMainBox-wrapper p{
+text-align: center;
+  font-size: 18px;
+  color: #475569;
+  margin-top: 10px;
+}
+.InsightMainBox-wrapper .InsightBox img{
+    width: 55px;
+}
+.InsightMainBox-wrapper .insightBoxBtn-box{
+    text-align: center;
+    padding-top: 4em;
+}
+
+
+/*  */
+
+.ClientTestimonialMain-wrapper{
+    width: 100%;
+    padding: 65px 0px;
+}
+.ClientTestimonialMain-wrapper h3{
+    font-size: 36px;
+    color: #0f172a;
+    text-align: center;
+    text-transform: capitalize;
+}
+.ClientTestimonial-containerBox {
+    max-width: 900px;
+    background-color: #fff6db;
+    display: grid;
+    padding: 20px 25px;
+    margin-top: 30px;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    align-items: center;
+    border-radius: 15px;
+}
+.ClientTestimonial-media {
+    max-width: 250px;
+    width: 100%;
+}
+.ClientTestimonial-info{
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+.ClientTestimonial-info h5{
+    font-size: 24px;
+    color: #475569;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+.ClientTestimonial-info span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #475569;
+    margin-top: 5em;
+    display: block;
+}
+.ClientTestimonial-info h6{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #475569;
+}
+.ClientTestimonial-info .yellowQoute{
+    position: absolute;
+    top: 0;
+    left: -70px;
+    right: auto ;
+}
+
+/* FAQs CSS */
+.faqSection-main {
+    max-width: 1020px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 10px 80px 10px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+}
+
+.faqSection-main h3 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.faqContainer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.faqBox-item {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.faqBox-item.active{
+    background-color: #f6f6f6;
+}
+
+.faq-question {
+    background-color: #fbfbfb;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+    color: #414141;
+}
+
+.faq-question span {
+    background-color: #0f6fff;
+    padding: 7px 13px;
+    border-radius: 24px;
+    color: #fff;
+}
+
+.faq-answer {
+    height: 0; 
+    overflow: hidden;
+    padding: 0 15px; 
+    background-color: #f6f6f6;
+    font-size: 18px;
+    font-weight: 400;
+    color: #656565;
+    transition: height 0.4s ease, padding 0.4s ease; 
+}
+
+.faq-answer.active {
+    height: 75px;
+}
+
+.faq-question.active{
+    background-color: #f6f6f6;
+}
+.faq-question.active span {
+    transform: rotate(0deg);
+    color: #fff;
+}
+
+
+.bottomCtaMain-wrapper{
+    width: 100%;
+    background-image: url(../images/bottomsectionbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 65px 0px;
+    text-align: center;
+}
+.bottomCtaMain-container{
+    position: relative;
+}
+.bottomCtaMain-wrapper h3{
+    font-size: 36px;
+    color: #0f172a;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+}
+.bottomCtaMain-wrapper p{
+    font-size: 18px;
+    color: #475569;
+    font-weight: 400;
+    margin: 30px 0px;
+}
+.bottomCtaMain-wrapper span{
+    font-size: 14px;
+    color: #68768a;
+    font-weight: 400;
+    display: block;
+    padding-top: 30px;
+}
+.bottomCtaMain-wrapper .bottomcharacter-img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+footer{
+    width: 100%;
+    padding: 50px 0;
+    /* background: #111112; */
+    text-align: center;
+}
+footer .footerLinksBox{
+    display: flex;
+    color: #fff;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .footerFull-line{
+    margin: 30px 0;
+    border: none;
+    height: 1px;
+    background-color: #0000004a;
+}
+footer .footerLinksBox hr {
+    width: 1px;
+    height: 20px;
+    background: #dddddd;
+    border: 0;
+}
+footer .footerLinksBox .footerCopyrightBox {
+    font-size: 14px;
+    color: #000;
+}
+
+footer .footerLinksBox a{
+    display: inline-block;
+    color: #313131;
+    text-decoration: none;
+}
+
+footer .footerLinksBox .fa{
+    font-size: 20px;
+    margin-left: 10px;
+}
+footer .footerLinksBox a:hover{
+    text-decoration: underline;
+}
+footer .footerLinksBox .footerLinks{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+@media only screen and (max-width: 1380px){
+    .headerBoxMain{
+        grid-template-columns: 1fr 2fr 1.5fr;
+    }
+}
+@media only screen and (max-width: 1320px){
+    .heroMediaBox .heroMainInfo-img{
+        width: 70%;
+    }
+    /* .HeroMain-wrapper .characterHero-image{
+        right: 40px;
+    } */
+}
+
+@media only screen and (max-width: 1130px){
+    .headerBoxMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .pricing-cards {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .headerBoxMain .ctaBox{
+        display: none;
+    }
+    .navigationBox{
+        display: flex;
+        text-align: right;
+        justify-content: right;
+    }
+    .MobileNavigationToggle{
+        display: block;
+        cursor: pointer;
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+    }
+    .MobileNavigationToggle .fa{
+        font-size: 25px;
+        color: #fff;
+    }
+    .DesktopNavigationMenu{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1103px){
+    .bottomCtaMain-wrapper .bottomcharacter-img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 938px){
+    .HeroMain-wrapper h1{
+        font-size: 45px;
+    }
+
+    .featuresMain-wrapper h3{
+        font-size: 26px;
+        line-height: 1.4em;
+    }
+    .featuresMain-wrapper .featuresSubHeading{
+        font-size: 16px;
+    }
+    .FeaturesTestimonialBox p{
+        font-size: 15px;
+    }
+    .InsightMainBox-wrapper h2{
+        font-size: 32px;
+        line-height: 1.4em;
+    }
+    .InsightMainBox-wrapper .InsightMainBoxs-container{
+        padding-top: 2em;
+        grid-template-columns: 1fr 1fr;
+    }
+    .ClientTestimonialMain-wrapper h3{
+        font-size: 32px;
+    }
+    .ClientTestimonial-info h5{
+        font-size: 21px;
+    }
+    .ClientTestimonial-info{
+        max-width: 400px;
+    }
+    .ClientTestimonial-info span{
+        font-size: 18px;
+        margin-top: 3em;
+    }
+    .bottomCtaMain-wrapper h3{
+        font-size: 32px;
+    }
+
+    footer .footerLinksBox{
+        display: flex;
+        gap: 25px;
+        flex-direction: column-reverse;
+    }
+    footer .footerLinksBox hr{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .HeroMain-wrapper{
+        padding: 50px 0px 80px 0px;
+    }
+    .HeroMain-wrapper h1{
+        font-size: 42px;
+        line-height: normal;
+    }
+    .HeroMain-wrapper h1 br{
+        display: none;
+    }
+    .HeroMain-wrapper p{
+        font-size: 16px;
+    }
+    .HeroMain-wrapper p strong{
+        font-size: 16px;
+    }
+    .HeroMain-wrapper .heroMediaBox{
+        padding-top: 3em;
+    }
+    .TrustBadgeMain-wrapper .container{
+        padding: 45px 20px;
+    }
+    .TrustBadgeMain-wrapper p{
+        gap: 15px;
+    }
+    .TrustBadgeMain-wrapper .trustbadgeLogoBox{
+        gap: 3em;
+        flex-wrap: wrap;
+    }
+    .TrustBadgeMain-wrapper{
+        padding: 50px 0px 20px 0px;
+    }
+    .featuresMain-wrapper .container{
+        grid-template-columns: 1fr;
+    }
+    .ClientTestimonial-info h5{
+        font-size: 18px;
+    }
+    .ClientTestimonial-info .yellowQoute{
+        left: -50px;
+    }
+    .ClientTestimonial-info span{
+        font-size: 16px;
+    }
+    .heroSignup-formBox form{
+        grid-template-columns: 1fr;
+    }
+    .heroSignup-formBox .heroFormInputBox span{
+        display: none;
+    }
+    .googleBtn-box .googleBtn{
+        gap: 20px;
+    }
+    .heroTrustBox-main{
+        gap: 20px;
+        margin-top: 2em;
+    }
+}
+
+@media only screen and (max-width: 730px){
+    .ClientTestimonial-containerBox{
+        grid-template-columns: 1fr;
+    }
+    .ClientTestimonialMain-wrapper .ClientTestimonial-media{
+       text-align: center;
+    }
+    .ClientTestimonial-containerBox-main {
+        padding: 0px 10px;
+    }
+    .ClientTestimonial-media {
+        max-width: none;
+    }
+    .ClientTestimonialMain-wrapper .ClientTestimonial-media img{
+        width: 80%;
+    }
+    /* .HeroMain-wrapper .characterHero-image{
+        display: none;
+    } */
+    .banner-form-container .email-section {
+    
+        gap: 0;
+   
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .HeroMain-wrapper{
+        padding-bottom: 0px !important;
+    }
+    .HeroMain-wrapper h1{
+        font-size: 36px;
+    }
+    .heroMediaBox .heroMainInfo-img{
+        width: 100%;
+    }
+    .HeroMain-wrapper .heroMediaBox{
+        padding-top: 2em;
+    }
+    .HeroMain-wrapper{
+        padding: 50px 0px;
+    }
+    .bottomCtaMain-wrapper h3, .InsightMainBox-wrapper h2{
+        font-size: 30px;
+        line-height: 1.4em;
+    }
+    .InsightMainBox-wrapper h2 br{
+        display: none;
+    }
+    .TrustBadgeMain-wrapper h2{
+        line-height: 1.4em;
+    }
+    .TrustBadgeMain-wrapper p{
+        display: flex;
+        flex-direction: column;
+    }
+    .TrustBadgeMain-wrapper .trustbadgeLogoBox{
+        gap: 20px;
+        margin-top: 2em;
+    }
+    .featuresMain-wrapper .container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .InsightMainBox-wrapper{
+        padding: 50px 0px;
+    }
+    .InsightMainBox-wrapper .InsightMainBoxs-container{
+        grid-template-columns: 1fr;
+    }
+    /* .InsightMainBox-wrapper .InsightBox{
+        height: 170px;
+    } */
+    .InsightMainBox-wrapper .insightBoxBtn-box{
+        padding-top: 2em;
+    }
+    .ClientTestimonialMain-wrapper h3{
+        font-size: 30px;
+    }
+    .ClientTestimonial-containerBox{
+        gap: 30px;
+    }
+    .ClientTestimonial-info h5{
+        font-size: 16px;
+        padding-left: 30px;
+    }
+    .ClientTestimonial-info span{
+        margin-top: 2em;
+    }
+    .ClientTestimonial-info .yellowQoute{
+        width: 32px;
+        left: 0;
+    }
+    .ClientTestimonialMain-wrapper, .bottomCtaMain-wrapper{
+        padding: 50px 0px
+    }
+    .bottomCtaMain-wrapper h3 br{
+        display: none;
+    }
+    footer .footerLinksBox .footerLinks a{
+        font-size: 14px;
+    }
+}
